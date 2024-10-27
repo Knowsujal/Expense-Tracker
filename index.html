@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enterprise</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+            <a href="#home" class="logo">
+                <i class='bx bx-calculator'></i>Enterprise
+            </a>
+            <div class="bx bx-menu" id="menu-icon"></div>
+            <ul class="nav">
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Add Expense</a></li>
+                <li><a href="#">Reports</a></li>
+            </ul>
+            <button id="login">Sign In</button>
+    </header>
+
+    <!-- Dashboard Section -->
+    <section id="dashboard">
+        <h2>Dashboard</h2>
+        <div class="stats">
+            <div class="stat-item">
+                <h3>Total Expenses</h3>
+            <p id="totalExpenses">$0.00</p>
+            </div>
+            <div class="stat-item">
+                <h3>Total Entries</h3>
+                <p id="totalEntries">0</p>
+            </div>
+        </div>
+    </section>
+    <!-- Wallet Section -->
+    <section id="wallet">
+        <h2>Wallet Balance</h2>
+        <div>
+            <label for="initialWalletAmount">Set Initial Wallet Amount:</label>
+            <input type="number" id="initialWalletAmount" placeholder="Enter initial amount">
+            <button id="setWalletButton">Set Wallet</button>
+        </div>
+        <p>Current Balance: <span id="walletBalance">$0.00</span></p>
+    </section>
+
+
+    <!-- Expense Form Section -->
+    <section id="expense-form">
+        <h2>Add New Expense</h2>
+        <form id="addExpenseForm">
+            <div>
+                <label for="expenseName">Name:</label>
+                <input type="text" id="expenseName" required>
+            </div>
+            <div>
+                <label for="expenseAmount">Amount:</label>
+                <input type="number" id="expenseAmount" required>
+            </div>
+            <div>
+                <label for="expenseCategory">Category:</label>
+                <select id="expenseCategory">
+                    <option value="Travel">Travel</option>
+                    <option value="Meals">Food</option>
+                    <option value="Supplies">Supplies</option>
+                    <option value="Misc">Miscellaneous</option>
+                </select>
+            </div>
+            <button type="submit">Add Expense</button>
+        </form>
+    </section>
+
+    <!-- Expense Table Section -->
+    <section id="expenseTableSection">
+        <h2>Expense List</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Amount</th>
+                    <th>Category</th>
+                    <th>Date</th>
+                </tr>
+            </thead>
+            <tbody id="expenseTableBody">
+                <!-- Expenses will be added here dynamically -->
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Footer Section -->
+    <section class="footer">
+        <a href="" class="logo"> 
+            <i class="bx bxs-calculator"></i>Enterprise
+        </a> 
+        <div class="social">
+            <a href=""><i class='bx bxl-facebook'></i></a> 
+            <a href=""><i class='bx bxl-twitter'></i></a> 
+            <a href=""><i class='bx bxl-instagram'></i></a> 
+        </div>
+    </section>
+
+    <!-- Copyright --> 
+        <div class="copyright"> 
+            <p>&#169; Enterprise | All Right Reserved</p>
+        </div>
+        
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Link to JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>

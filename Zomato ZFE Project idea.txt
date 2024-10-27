@@ -1,0 +1,29 @@
+Zomato ZFE Project idea
+
+Basic idea - design for companies to solve FOOD EXPENSE MANAGEMENT.
+
+Requirements - 
+
+1. To add no. of employees.
+2. To set budget provided to each department/employees.
+3. Maintaining rules and policies of the company regarding the approval or rejection of food expenses.
+
+Context :-
+
+The Webpage helps the executive (for eg, Manager) to manage the food expense (i.e, how much the company will spend on their employees for food). 
+It gives control to the executive to have a track on the expenses and to be able to approve or reject the order.
+The employees will order the food and the money will be directly deducted from the companies budget that prevent reimbursement process.
+
+Project Task :-
+
+Details includes -
+1. Name, no. of employees registered in the system.
+2. Order Id and details are stored with the employee name assigned with it.
+3. Manager will be notified if the expense crosses or doesn't match the rules of policy of the company.
+
+Working Idea -
+ The page is designed as per the manager or the higher executive that will control all the expenses that might include-
+
+i) Employee register themselves on the site and they use that interface to order and the bill is saved in the system and payment is done by the company.
+ii) The manager that controls the expense system will be notified if the expense got cross or any policy has been broken.
+iii) The manager got to choose whether he/she has to approve the order or not by clicking button "Approved" or "Disapproved".
